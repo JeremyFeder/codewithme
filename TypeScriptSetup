@@ -1,0 +1,35 @@
+GETTING SET UP FOR TypeScript!
+
+1)  Download and install the LTS version of Node at Nodejs.org (should be version 8.11.1, as of now)
+
+2)  Open up a command line and create a new folder for a new project and create the following 2 files:  index.html, app.ts         (note that it is .ts !!!) with some basic JavaScript code in it, could just be console.log("Hello World"); for now.
+
+3)  In the index.html, make a standard boiler-plate html document, but add <script type="text/javascript" src="app.js"> at the     bottom of the <body> section.  (Note that that one is .js !!!)
+
+4)  Open a second command line window pointing into that same new folder.
+
+5)  In the command line of either:  sudo npm -g install typescript
+
+6)  command lines:  npm init
+                    npm install lite-server —save-dev
+
+7)  Check out the new package.json that was created on init, and check that lite-server was added as a dependency
+
+8)  In package.json, change "main" to     "main": "index.html",
+
+9)  Also in package.json, under Scripts, add a comma after the Test line, and then add below it:  "start": "lite-server"
+
+10) command line:  npm start
+
+11) Should open up a blank local-hosted webpage under control of lite-server.  Hit CTRL-C in command line to quit it.
+
+12) Now go back to the second open command line.   Command line:   tsc --init
+
+13) This is what puts the project under TypeScript control, and you should now see a new tsconfig.json file generated in your     project folder.  This is what will be used to configure how TypeScript gets compiled.
+
+14) finally...  command line:  tsc
+      
+That last step is what is used to compile all TypeScript (.ts) files into JavaScript (.js) files to be run by the browser.  It is handy to keep both command lines open; one to run lite-server, one to handle the tsc compilation commands.
+                  
+                    
+                    
